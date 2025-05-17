@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Welcome from './components/Welcome'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Welcome from './components/Welcome';
+import Signup from './components/Signup';
 function App() {
   return (
-    <div>
-      <h1>Meme Game</h1>
-      <Welcome />
-    </div>
-  )
+    <Router basename="/">
+      <Routes>
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App; 
