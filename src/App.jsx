@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Welcome from './components/Welcome';
 import Signup from './pages/Signup';
 
+
 function App() {
   return (
     <Router basename="/">

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Signup.css';  
-import { useNavigate } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -10,9 +11,9 @@ const SignUp = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Add your login API call here
+    // API WILL BE HERE
     console.log('Logging in with:', { email, password });
-    // After successful login, navigate to game
+    // GO TO GAME PAGE AFTER LOGIN
     navigate('/game');
   };
 
